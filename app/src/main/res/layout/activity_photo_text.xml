@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoText">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+    <Button
+        android:id="@+id/btnSelectPhoto"
+        android:text="Select Photo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnProcess"
+        android:text="Process"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSelectPhoto" />
+
+    <TextView
+        android:id="@+id/textDetails"
+        android:text="NO Text"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnProcess" />
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoCard">
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scrollbars="vertical"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailsText"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Name:"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_toRightOf="@+id/nameLabel"
+                android:layout_width="240dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLayout"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="phone:"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_toRightOf="@+id/phoneLabel"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:inputType="phone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneLayout"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Email:"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_toRightOf="@+id/emailLabel"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/companyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLayout"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/companyLabel"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Company:"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/companyEditText"
+                android:layout_toRightOf="@+id/companyLabel"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:inputType="text"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/companyLayout"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/addressLabel"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Adress:"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_toRightOf="@+id/addressLabel"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:inputType="text"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+       <LinearLayout
+        android:layout_below="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveBtn"
+            android:text="save"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
