@@ -8,8 +8,3 @@ A simple OCR based Android Application which can save information from a busines
 
 - Features are limited
 - Accuracy to identify the attributes from extracted text not that high (average accuracy 45.7%), because it uses regular expressions. 
-
-## ScreenShots
-![home_screen](https://github.com/MuizZer07/Save-Card/blob/master/screenShots/home_screen.jpg)
-![capture_screen](https://github.com/MuizZer07/Save-Card/blob/master/screenShots/capturing_screen.jpg)
-![edit_screen](https://github.com/MuizZer07/Save-Card/blob/master/screenShots/editing.jpg)
